@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
         // as an acceleration (ms^-2)
         moveDirection.y -= gravity * Time.deltaTime;
 
+
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
     }
