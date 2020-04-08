@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        transform.rotation = Quaternion.Euler(0, 90, 0);
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     void Update()
@@ -42,5 +42,6 @@ public class Player : MonoBehaviour
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
     }
+
 
 }
