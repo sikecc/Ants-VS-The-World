@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &2326276359269078306
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572620771652285166}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &870288766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46,6 +62,10 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   gravity: 20
+  playerCameraParent: {fileID: 0}
+  lookSpeed: 2
+  lookXLimit: 60
+  canMove: 1
 --- !u!1001 &200682552304902478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 7773122589585871776, guid: 4343c4847b3462142be9455a62b2c0c9,
         type: 3}
       propertyPath: m_Name
-      value: Ant_anim_fbx
+      value: animAnt
       objectReference: {fileID: 0}
     - target: {fileID: 7773122589585871790, guid: 4343c4847b3462142be9455a62b2c0c9,
         type: 3}

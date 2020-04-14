@@ -168,11 +168,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011667685464}
   - component: {fileID: 205000011201749446}
+  - component: {fileID: 3431816242688258573}
   - component: {fileID: 65000012155365366}
-  - component: {fileID: 7694466474261620979}
+  - component: {fileID: -6985595774386583697}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,7 +187,7 @@ Transform:
   m_GameObject: {fileID: 1000013678658166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4000013711606732}
   - {fileID: 4000013381597554}
@@ -216,20 +217,7 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23000011664627356}
   m_Enabled: 1
---- !u!65 &65000012155365366
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013678658166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.09203893, y: 0.10557197, z: 0.093840025}
-  m_Center: {x: 0.00030497648, y: 0.05283799, z: 0.000054053962}
---- !u!54 &7694466474261620979
+--- !u!54 &3431816242688258573
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,3 +233,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65000012155365366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013678658166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09203893, y: 0.10557197, z: 0.093840025}
+  m_Center: {x: 0.00030497648, y: 0.05283799, z: 0.000054053962}
+--- !u!114 &-6985595774386583697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013678658166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebc8845483648d4b8e4fe88a82adbf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Fruits : MonoBehaviour
 {
@@ -8,11 +6,12 @@ public class Fruits : MonoBehaviour
     {
         var hit = collision.gameObject;
         var hitPlayer = hit.GetComponent<Player>();
-        if(hitPlayer != null)
+        if (hitPlayer != null)
         {
             var health = hit.GetComponent<Health>();
             health.AddHealth(10);
             Destroy(gameObject);
         }
+
     }
 }
