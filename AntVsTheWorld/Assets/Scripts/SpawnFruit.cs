@@ -5,7 +5,7 @@ public class SpawnFruit : MonoBehaviour
 {
     public List<GameObject> Fruits = new List<GameObject>();
     public float StartX, EndX, StartZ, EndZ;
-    public int NumFruits = 25;
+    public int NumFruits = 50;
     private float PlaceX, PlaceZ;
 
     // Start is called before the first frame update

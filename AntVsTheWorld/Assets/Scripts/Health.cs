@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     }
     public void TakeDamage(int amount)
     {
-        health -= 10;
+        health -= amount;
         if(health < 0)
         {
             // End game
@@ -22,10 +22,11 @@ public class Health : MonoBehaviour
 
         // Else update health bar here
         // bar.setValue(-10)
+        Debug.Log("current health : " + health);
     }
     public void AddHealth(int amount)
     {
-        health = health + 10 > 100 ? 100 : health + 10;
+        health = health + amount > 100 ? 100 : health + amount;
 
         // Update health bar here
         // bar.setValue(10);
