@@ -17,7 +17,13 @@ public class SceneChange : MonoBehaviour
             audio.Play();
             RawImage image = Instantiate(transitionImage) as RawImage;
             image.transform.SetParent(canvas.transform);
-            SceneManager.LoadScene(scene);
+
+            Invoke("changeScene", 5.0f);
         }
+    }
+
+    private void changeScene()
+    {
+        SceneManager.LoadScene(scene);
     }
 }
