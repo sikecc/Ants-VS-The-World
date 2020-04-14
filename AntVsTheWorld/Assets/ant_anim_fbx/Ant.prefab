@@ -43,7 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad1f67b9763fd445b774e2b8f8b9368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!114 &5260821744428441984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,6 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7289cb780243cf4dafd737dfbddfcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
   speed: 6
   jumpSpeed: 8
   gravity: 20

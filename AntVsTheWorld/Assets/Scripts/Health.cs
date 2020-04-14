@@ -1,35 +1,42 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Health : MonoBehaviour
 {
-    public const int maxHealth = 100;
-    public int health = maxHealth;
-    // whatever object of health bar
-    // public GameObject bar;
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    /* Reflect the damage to the health bar */
+    public HealthBar healthBar;
 
     public void Start()
     {
-        // get the component
-        // bar = getComponent<type>();
+        currentHealth = maxHealth;
+        /* Start with max health in the bar */
+        healthBar.SetMaxHealth(maxHealth);
     }
-    public void TakeDamage(int amount)
+    public void TakeDamage(int damage)
     {
-        health -= amount;
-        if(health < 0)
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
+        if(currentHealth < 0)
         {
             // End game
         }
 
         // Else update health bar here
         // bar.setValue(-10)
-        Debug.Log("current health : " + health);
+        Debug.Log("current health : " + currentHealth);
     }
     public void AddHealth(int amount)
     {
-        health = health + amount > 100 ? 100 : health + amount;
+        currentHealth = currentHealth + amount > 100 ? 100 : currentHealth + amount;
 
         // Update health bar here
         // bar.setValue(10);
-        Debug.Log("current health : " + health);
+        Debug.Log("current health : " + currentHealth);
     }
 }
