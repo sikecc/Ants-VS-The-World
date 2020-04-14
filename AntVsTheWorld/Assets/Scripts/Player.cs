@@ -42,6 +42,4 @@ public class Player : MonoBehaviour
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
     }
-
-
 }
