@@ -34,7 +34,6 @@ public class Health : MonoBehaviour
     public void AddHealth(int amount)
     {
         currentHealth = currentHealth + amount > 100 ? 100 : currentHealth + amount;
-
         // Update health bar here
         // bar.setValue(10);
         Debug.Log("current health : " + currentHealth);

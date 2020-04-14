@@ -66,6 +66,8 @@ public class Player : MonoBehaviour
         {
             var health = gameObject.GetComponent<Health>();
             health.AddHealth(10);
+            AudioScript.PlaySound("addPoint");
+            AudioScript.PlaySound("eating");
             Destroy(collision.gameObject);
         }
         else if(collision.gameObject.tag == "NPC")
