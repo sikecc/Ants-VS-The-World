@@ -29,6 +29,6 @@ public class Health : MonoBehaviour
 
         // Update health bar here
         // bar.setValue(10);
-        Debug.Log("hit");
+        Debug.Log("current health : " + health);
     }
 }

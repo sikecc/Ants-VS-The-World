@@ -60,4 +60,19 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector2(0, rotation.y);
         }
     }
+    private void OnControllerColliderHit(ControllerColliderHit collision)
+    {
+
+        if (collision.gameObject.tag == "Fruit")
+        {
+            var health = gameObject.GetComponent<Health>();
+            health.AddHealth(10);
+            Destroy(collision.gameObject);
+        }
+        else if(collision.gameObject.tag == "NPC")
+        {
+            var health = gameObject.GetComponent<Health>();
+            health.TakeDamage(20);
+        }
+    }
 }
