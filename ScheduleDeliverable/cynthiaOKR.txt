@@ -8,3 +8,4 @@ Fixed some issues with the AI -- Wed by 4:30PM (estimate: 2-3 hrs)
 Added more AI features -- 3 hrs
 Worked on Main HUD -- estimate 3 hrs
 Work with Lucas on health -- estimate 2 hrs
+UI design -- 4 hrs
