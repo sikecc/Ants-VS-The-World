@@ -1,1 +1,10 @@
 Work with Lucas on bare bone scenes & have them transition -- Mon by 5PM (estimate: 3-4 hrs)
+
+Assignment 7
+Added AI components (3: human, rabbit, car) - Wed by 4:30PM (estimate: 5-6 hours)
+
+Assignment 8 
+Fixed some issues with the AI -- Wed by 4:30PM (estimate: 2-3 hrs)
+Added more AI features -- 3 hrs
+Worked on Main HUD -- estimate 3 hrs
+Work with Lucas on health -- estimate 2 hrs
