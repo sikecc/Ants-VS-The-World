@@ -4,6 +4,11 @@
   * Health system
   * Fruits that player can pick up and adds to health
   * NPC that can kill player if player collide with them
+- Added UI Design
+  * Added health bar HUD with gradient
+  * Added life counter to HUD
+- Added New Car AI
+  * Replaced old car with issues with new car
 - Added transitions
   * 5 seconds delay transitions
   * Picture of next scene
