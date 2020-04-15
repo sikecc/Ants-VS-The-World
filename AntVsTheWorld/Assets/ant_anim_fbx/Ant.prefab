@@ -1060,8 +1060,8 @@ GameObject:
   - component: {fileID: 2129453120375144063}
   - component: {fileID: 5260821744428441986}
   - component: {fileID: 5260821744428441987}
-  - component: {fileID: -6046962065860917907}
   - component: {fileID: 5260821744428441984}
+  - component: {fileID: -7425145232005996535}
   m_Layer: 0
   m_Name: Ant
   m_TagString: Player
@@ -1136,22 +1136,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20, y: 13, z: 15.900634}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &-6046962065860917907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129453120375144048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad1f67b9763fd445b774e2b8f8b9368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 4033098959989768760, guid: bf7c7d053c37040b8ab6d000c5e59f03,
-    type: 3}
 --- !u!114 &5260821744428441984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1155,22 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 60
   canMove: 1
+--- !u!114 &-7425145232005996535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129453120375144048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad1f67b9763fd445b774e2b8f8b9368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 4033098959989768760, guid: bf7c7d053c37040b8ab6d000c5e59f03,
+    type: 3}
 --- !u!1 &2129453120487967922
 GameObject:
   m_ObjectHideFlags: 0

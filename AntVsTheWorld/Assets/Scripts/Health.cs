@@ -8,6 +8,8 @@ public class Health : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
+    private LifeManager lifeSystem;
+
     /* Reflect the damage to the health bar */
     public HealthBar healthBar;
 
@@ -16,15 +18,18 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
         /* Start with max health in the bar */
         healthBar.SetMaxHealth(maxHealth);
+        lifeSystem = FindObjectOfType<LifeManager>();
+
     }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 
-        if(currentHealth < 0)
+        if(currentHealth <= 0)
         {
             // End game
+            lifeSystem.TakeLife();
         }
 
         // Else update health bar here
@@ -34,6 +39,7 @@ public class Health : MonoBehaviour
     public void AddHealth(int amount)
     {
         currentHealth = currentHealth + amount > 100 ? 100 : currentHealth + amount;
+
         // Update health bar here
         // bar.setValue(10);
         Debug.Log("current health : " + currentHealth);
