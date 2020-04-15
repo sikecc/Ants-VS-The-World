@@ -1,1 +1,6 @@
 Create ant and add player movement -- Mon 3/30 by 5PM (estimate: 1-2 hrs)
+Add mecanim to ant and humans -- Monday 4/06 by 8PM (estimate: 1-2 hrs)
+Adjust player controls -- Tues 4/07 by 2PM (estimate: 1-2 hrs)
+Add 3D physics -- Tues 4/07 by 8PM (estimate: 1-2 hrs)
+Fix player controls -- Mon 4/13 by 4PM (estimate: 1 hr)
+Add sounds -- Tues 4/14 by 8PM (estimate: 2-3 hrs)

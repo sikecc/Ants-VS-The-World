@@ -8,6 +8,9 @@
   * 5 seconds delay transitions
   * Picture of next scene
   * Game over when player dies
+- Add sounds
+  * Background music/sounds for each scene
+  * Sound fx for each event: collect fruits, come in contact with NPCs, death
 ### Assignment 7 Updates 4/8/20
 - Added 2 light source 
   * Emissive cube
