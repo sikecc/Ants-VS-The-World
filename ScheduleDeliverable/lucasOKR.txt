@@ -1,1 +1,3 @@
 Work with Cynthia to prototype the barebons scenes and transitions. -- Tuesday 3/31 by 5PM (estimate: 4 hrs)
+Work with Cynthia to implement UI interaction and design. -- Tuesday 4/14 by 10PM (estimate: 8 hrs)
+Fix ant falling through city map bug -- Tuesday 4/14 by 5PM (estimate: 3 hrs)
