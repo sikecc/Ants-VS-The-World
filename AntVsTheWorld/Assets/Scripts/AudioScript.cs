@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioScript : MonoBehaviour
 {
-    public static AudioClip addPoint, eating;
+    public static AudioClip addPoint, eating, death, damage;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -12,6 +12,8 @@ public class AudioScript : MonoBehaviour
     {
         addPoint = Resources.Load<AudioClip>("addPoint");
         eating = Resources.Load<AudioClip>("eating");
+        death = Resources.Load<AudioClip>("death");
+        damage = Resources.Load<AudioClip>("damage");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -25,6 +27,12 @@ public class AudioScript : MonoBehaviour
                 break;
             case "eating":
                 audioSrc.PlayOneShot(eating);
+                break;
+            case "death":
+                audioSrc.PlayOneShot(death);
+                break;
+            case "damage":
+                audioSrc.PlayOneShot(damage);
                 break;
         }
     }

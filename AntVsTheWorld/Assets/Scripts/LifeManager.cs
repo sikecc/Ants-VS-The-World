@@ -28,6 +28,7 @@ public class LifeManager : MonoBehaviour
         if(lifeCounter < 0)
         {
             gameOverScreen.SetActive(true);
+            AudioScript.PlaySound("death");
             player.gameObject.SetActive(false);
         }
         theCounterText.text = "x " + lifeCounter;
