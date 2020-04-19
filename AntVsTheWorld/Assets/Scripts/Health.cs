@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
 
 public class Health : MonoBehaviour
 {
@@ -19,8 +16,8 @@ public class Health : MonoBehaviour
         /* Start with max health in the bar */
         healthBar.SetMaxHealth(maxHealth);
         lifeSystem = FindObjectOfType<LifeManager>();
-
     }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -31,17 +28,11 @@ public class Health : MonoBehaviour
             // End game
             lifeSystem.TakeLife();
         }
-
-        // Else update health bar here
-        // bar.setValue(-10)
-        Debug.Log("current health : " + currentHealth);
+        healthBar.SetHealth(currentHealth);
     }
     public void AddHealth(int amount)
     {
         currentHealth = currentHealth + amount > 100 ? 100 : currentHealth + amount;
-
-        // Update health bar here
-        // bar.setValue(10);
-        Debug.Log("current health : " + currentHealth);
+        healthBar.SetHealth(currentHealth);
     }
 }
