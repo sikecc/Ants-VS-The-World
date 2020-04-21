@@ -1,6 +1,15 @@
 # Ants
 ### Assignment 9 Updates 4/21/20
 - Added shaders to all animals (sheep, rabbit, cow, ant)
+- Added two forms of writing
+  * Introduction
+  * Credits
+- Added Screens
+  * Main Menu
+  * Tutorial
+  * Controls
+  * Pause Menu
+  * Game Over
 ### Assignment 8 Updates 4/14/20
 - Added UI Interaction
   * Health system
