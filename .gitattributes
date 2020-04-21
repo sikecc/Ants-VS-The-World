@@ -4,3 +4,5 @@
 level2.resS filter=lfs diff=lfs merge=lfs -text
 sharedassets2.assets filter=lfs diff=lfs merge=lfs -text
 sharedassets2.assets.resS filter=lfs diff=lfs merge=lfs -text
+*.RESS filter=lfs diff=lfs merge=lfs -text
+*.assets filter=lfs diff=lfs merge=lfs -text
