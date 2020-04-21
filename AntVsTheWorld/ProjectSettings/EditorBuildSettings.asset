@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 8654426c5b5d3ed46ae9209c62e78713
+  - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: 96574fc2ee07cee43bd3a847791aa542
+  - enabled: 1
     path: Assets/Scenes/ForestScene.unity
     guid: 7769f33fb4fa2e5458344a36556ad760
   - enabled: 1
@@ -15,15 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CityScene.unity
     guid: 819e90a3007ac704bbd1683ca0fa5c54
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 8654426c5b5d3ed46ae9209c62e78713
+    path: Assets/Scenes/Credits.unity
+    guid: b9e97fdd0bec98b42b14d67549979b98
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 1e22b710731dafd46bfe88adde2a010e
-  - enabled: 1
-    path: Assets/Scenes/Introduction.unity
-    guid: 96574fc2ee07cee43bd3a847791aa542
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: b9e97fdd0bec98b42b14d67549979b98
   m_configObjects: {}
