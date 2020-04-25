@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     //NEW
     private Vector2 rotation = Vector2.zero;
     public bool canMove = true;
-
+    private  bool cursorIsVisible = true;
     private bool enabled = true;
     void Start()
     {
@@ -31,6 +31,11 @@ public class Player : MonoBehaviour
     {
         if (characterController.isGrounded)
         {
+            if (cursorIsVisible)
+            {
+                Cursor.visible = false;
+                cursorIsVisible = false;
+            }
             Vector3 forward = transform.TransformDirection(Vector3.forward);
             Vector3 right = transform.TransformDirection(Vector3.right);
             float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
