@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     private Vector2 rotation = Vector2.zero;
     public bool canMove = true;
 
+    private bool enabled = true;
+    private bool cursorIsVisible = true;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -30,6 +32,11 @@ public class Player : MonoBehaviour
     {
         if (characterController.isGrounded)
         {
+            if (cursorIsVisible)
+            {
+                Cursor.visible = false;
+                cursorIsVisible = false;
+            }
             Vector3 forward = transform.TransformDirection(Vector3.forward);
             Vector3 right = transform.TransformDirection(Vector3.right);
             float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
@@ -70,11 +77,18 @@ public class Player : MonoBehaviour
             AudioScript.PlaySound("eating");
             Destroy(collision.gameObject);
         }
-        else if(collision.gameObject.tag == "NPC")
+        else if(collision.gameObject.tag == "NPC" && enabled == true)
         {
             var health = gameObject.GetComponent<Health>();
             AudioScript.PlaySound("damage");
             health.TakeDamage(20);
+            enabled = false;
+            StartCoroutine(DelayDamage(5f));
         }
+    }
+    private IEnumerator DelayDamage(float damageDelay)
+    {
+        yield return new WaitForSeconds(damageDelay);
+        enabled = true;
     }
 }
