@@ -21,11 +21,12 @@ public class Player : MonoBehaviour
     public bool canMove = true;
 
     private bool enabled = true;
-    private bool cursorIsVisible = Cursor.visible;
+    private bool cursorIsVisible = true;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
+        cursorIsVisible = Cursor.visible;       
     }
 
     void Update()
