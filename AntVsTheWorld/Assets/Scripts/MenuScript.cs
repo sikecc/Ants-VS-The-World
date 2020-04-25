@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    private void Start()
+    {
+        Cursor.visible = true;
+    }
     public void openIntro()
     {
         SceneManager.LoadScene("Introduction");

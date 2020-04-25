@@ -7,6 +7,7 @@ public class tutorialScript : MonoBehaviour
 {
     public void openMenu()
     {
+        Cursor.visible = true;
         SceneManager.LoadScene("Menu");
     }
 }

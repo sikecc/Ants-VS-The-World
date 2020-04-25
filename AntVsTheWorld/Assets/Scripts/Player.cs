@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     public bool canMove = true;
 
     private bool enabled = true;
-    private bool cursorIsVisible = true;
+    private bool cursorIsVisible = Cursor.visible;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
             rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
             transform.eulerAngles = new Vector2(0, rotation.y);
         }
+        cursorIsVisible = Cursor.visible;
     }
     private void OnControllerColliderHit(ControllerColliderHit collision)
     {
