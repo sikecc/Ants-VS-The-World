@@ -5,9 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     CharacterController characterController;
-    public float speed = 6.0f;
+    public float speed = 3.0f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
+    public float speedUp = 3.0f;
 
     //NEW
     public Transform playerCameraParent;
@@ -44,9 +45,10 @@ public class Player : MonoBehaviour
             float curSpeedY = canMove ? speed * -Input.GetAxis("Horizontal") : 0;
             moveDirection = (forward * curSpeedY) + (right * curSpeedX);
 
+            
             if (Input.GetButton("Jump") && canMove)
             {
-                moveDirection *= jumpSpeed;
+                moveDirection.y = jumpSpeed;
             }
         }
 
@@ -57,6 +59,12 @@ public class Player : MonoBehaviour
 
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
+
+        //Speed up with left shift
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canMove)
+            speed += speedUp;
+        if (Input.GetKeyUp(KeyCode.LeftShift) && canMove)
+            speed -= speedUp;
 
         //NEW
         if (canMove)
