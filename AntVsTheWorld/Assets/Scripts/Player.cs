@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     //NEW
     public Transform playerCameraParent;
     public float lookSpeed = 2.0f;
-    public float lookXLimit = 60.0f;
 
     private Vector3 moveDirection = Vector3.zero;
 
@@ -26,7 +25,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        rotation.y = transform.eulerAngles.y;
+        //rotation.y = transform.eulerAngles.y;
         cursorIsVisible = Cursor.visible;       
     }
 
@@ -70,9 +69,12 @@ public class Player : MonoBehaviour
         if (canMove)
         {
             rotation.y += Input.GetAxis("Mouse X") * lookSpeed;
-            rotation.x += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
-            transform.eulerAngles = new Vector2(0, rotation.y);
+            rotation.x -= Input.GetAxis("Mouse Y") * lookSpeed;
+            rotation.x = Mathf.Clamp(rotation.x, -10,10);
+            //transform.eulerAngles = new Vector2(0, rotation.y);
+            transform.eulerAngles = new Vector3(0, rotation.y, rotation.x);
+
+
         }
         cursorIsVisible = Cursor.visible;
     }
