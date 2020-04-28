@@ -27,8 +27,13 @@ public class Health : MonoBehaviour
         {
             // End game
             lifeSystem.TakeLife();
+            currentHealth = 100;
+            healthBar.SetHealth(currentHealth);
         }
-        healthBar.SetHealth(currentHealth);
+        else{
+          healthBar.SetHealth(currentHealth);
+        }
+
     }
     public void AddHealth(int amount)
     {
