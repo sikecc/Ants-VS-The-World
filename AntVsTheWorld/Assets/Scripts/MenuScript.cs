@@ -9,6 +9,12 @@ public class MenuScript : MonoBehaviour
     {
         Cursor.visible = true;
     }
+
+    public void openMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void openIntro()
     {
         SceneManager.LoadScene("Introduction");
@@ -24,6 +30,12 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
         
     }
+
+    public void openCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void quit()
     {
         Debug.Log("Player has quit the game");
